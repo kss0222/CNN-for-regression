@@ -140,8 +140,8 @@ model.summary()
 
 history = model.fit(X_train, y_train, batch_size=32, epochs=100, validation_split=0.2, callbacks=[checkpoint, early_stopping])
 
+test_loss = model.evaluate(X_test, y_test)
 
-# In[366]:
 
 
 print(r2_score(y, model.predict(X)))
