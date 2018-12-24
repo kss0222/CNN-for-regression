@@ -74,7 +74,7 @@ np.save("./numpy_data/binary_image_data.npy", xy)
 
 X_train, X_test, y_train, y_test = np.load('./numpy_data/binary_image_data.npy')
 
-X_train = X_train.astype('float32') / 255  # 예측값
+X_train = X_train.astype('float32') / 255  
 X_test = X_test.astype('float32') / 255
 
 print(X_train.shape)
@@ -83,7 +83,7 @@ print(np.bincount(y_train))
 print(np.bincount(y_test))
 
 
-Y_train = Y_train.astype('float32') / 255  # 실제값
+Y_train = Y_train.astype('float32') / 255 
 Y_train = Y_train.astype('float32')
 Y_test = Y_test.astype('float32') / 255
 Y_test = Y_test.astype('float32')
