@@ -1,3 +1,2 @@
-# Cnn_regression
-CNN for regression &
-AE for regression
+# CNN for regression & AE for regression
+
