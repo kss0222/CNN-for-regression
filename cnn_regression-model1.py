@@ -53,7 +53,7 @@ for idx, cat in enumerate(categories):
             filenames.append(f)
             file_token=filenames[i].split("_")[1]    
             n = float(file_token)
- #          n = abs(np.log10(n))
+            n = np.log10(n)
 
             X.append(data)
             y.append(n)
